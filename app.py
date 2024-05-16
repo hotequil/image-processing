@@ -4,10 +4,7 @@ image = cv2.imread("me.jpeg")
 
 cv2.imshow("Me", image)
 
-while True:
-    key = cv2.waitKey(1) & 0xFF
+key = cv2.waitKey(0)
 
-    if key == 27:
-        break
-
-cv2.destroyAllWindows()
+if key == 27:
+    cv2.destroyAllWindows()
